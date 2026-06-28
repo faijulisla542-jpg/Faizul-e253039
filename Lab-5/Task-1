@@ -1,0 +1,31 @@
+class BankAccount { 
+    String accountNumber; 
+    String accountHolderName; 
+    double balance; 
+    static String bankName = "Sonali Bank"; 
+    BankAccount(String accountNumber, String accountHolderName, double balance) { 
+        this.accountNumber = accountNumber; 
+        this.accountHolderName = accountHolderName; 
+        this.balance = balance; 
+    } 
+    public static void showBankName() { 
+        System.out.println("Bank Name: " + bankName); 
+    } 
+    public void displayAccountInfo() { 
+        System.out.println("Account Number: " + accountNumber); 
+        System.out.println("Account Holder: " + accountHolderName); 
+        System.out.println("Balance: " + balance ); 
+        System.out.println("\n"); 
+       
+    } 
+} 
+public class Main { 
+    public static void main(String[] args) { 
+        BankAccount.showBankName(); 
+        BankAccount account1 = new BankAccount("ACC001", "Rahim Uddin", 15000.00 ); 
+        BankAccount account2 = new BankAccount("ACC002", "Karim Hossain", 27500.50); 
+        System.out.println("\n Account Details"); 
+        account1.displayAccountInfo(); 
+        account2.displayAccountInfo(); 
+    } 
+}
