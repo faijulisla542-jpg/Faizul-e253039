@@ -1,0 +1,58 @@
+class Person { 
+String name; 
+int age; 
+Person(String name, int age) { 
+this.name = name; 
+2.       
+super(name, age); 
+} 
+public void describeWork() { 
+System.out.println("Engineer builds 
+technical solutions."); 
+Lab 06 
+ 
+        this.age = age; 
+    } 
+    public void displayInfo() { 
+        System.out.println("Name : " + name); 
+        System.out.println("Age  : " + age); 
+    } 
+} 
+class Doctor extends Person { 
+    Doctor(String name, int age) { 
+        super(name, age); 
+    } 
+    public void describeWork() { 
+        System.out.println("Doctor treats patients."); 
+    } 
+} 
+class Teacher extends Person { 
+    Teacher(String name, int age) { 
+        super(name, age); 
+    } 
+    public void describeWork() { 
+        System.out.println("Teacher educates 
+students."); 
+    } 
+} 
+class Engineer extends Person { 
+    Engineer(String name, int age) { 
+ 
+    } 
+} 
+public class Main { 
+    public static void main(String[] args) { 
+        Doctor d = new Doctor("Dr. Nadia", 45); 
+        Teacher t = new Teacher(" Amanullah", 38); 
+        Engineer e = new Engineer("Sayeed", 22); 
+        System.out.println("  Doctor "); 
+        d.displayInfo(); 
+        d.describeWork(); 
+        System.out.println("\n  Teacher  "); 
+        t.displayInfo(); 
+        t.describeWork(); 
+        System.out.println("\n   Engineer  "); 
+        e.displayInfo(); 
+        e.describeWork(); 
+    } 
+}
