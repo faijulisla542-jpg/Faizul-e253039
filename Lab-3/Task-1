@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class EvenNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int start, end, i, count = 0;
+        System.out.print("Enter starting number: ");
+        start = input.nextInt();
+        System.out.print("Enter ending number: ");
+        end = input.nextInt();
+        int[] even = new int[end - start + 1];
+        i = start;
+        while (i <= end) {
+            if (i % 2 == 0) {
+                even[count] = i;
+                count++;
+            }
+            i++;
+        }
+        int j = 0;
+        System.out.println("Even numbers are:");
+        do {
+            if (j < count) {
+                System.out.print(even[j] + " ");
+            }
+            j++;
+        } while (j < count);
+
+        input.close();
+    }
