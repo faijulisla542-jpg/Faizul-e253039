@@ -1,0 +1,27 @@
+class LibraryBook { 
+String title; 
+String author; 
+int bookID; 
+LibraryBook(String title, String author, int bookID) { 
+this.title = title; 
+this.author = author; 
+this.bookID = bookID; 
+} 
+public void displayBookInfo() { 
+System.out.println("Book ID   : " + this.bookID); 
+        System.out.println("Title     : " + this.title); 
+        System.out.println("Author    : " + this.author); 
+        System.out.println("\n"); 
+    } 
+} 
+public class Main { 
+    public static void main(String[] args) { 
+        LibraryBook book1 = new LibraryBook("Data Structures", "SAif", 253065); 
+        LibraryBook book2 = new LibraryBook("Clean Code", "Md. Abu Sayeed", 253063); 
+        LibraryBook book3 = new LibraryBook("Introduction to Java", "Maruf", 253045); 
+        System.out.println("Library Book Details"); 
+        book1.displayBookInfo(); 
+        book2.displayBookInfo(); 
+        book3.displayBookInfo(); 
+    } 
+} 
